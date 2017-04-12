@@ -7,6 +7,11 @@
     "test": "test"
   },
   "scripts": {
+    "dev": "webpack-dev-server --env.dev",
+    "clean": "rimraf rm -Rf .tmp dist",
+    "build": "npm run clean && webpack -p --env.prod",
+    "build:dev": "npm run clean && webpack --env.dev",
+    "start": "webpack-dev-server --watch --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -46,6 +51,7 @@
     "http-proxy-middleware": "^0.17.0",
     "istanbul": "^0.4.5",
     "istanbul-instrumenter-loader": "^2.0.0",
+    "jasmine": "^2.5.3",
     "json-loader": "^0.5.4",
     "karma": "^1.5.0",
     "karma-babel-preprocessor": "^6.0.1",
@@ -54,6 +60,7 @@
     "karma-coverage": "^1.1.1",
     "karma-firefox-launcher": "^1.0.1",
     "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.0",
     "karma-mocha": "^1.3.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-sinon": "^1.0.5",
