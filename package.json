@@ -76,7 +76,6 @@
     "node-sass": "^3.6.0",
     "npm-run-all": "^1.8.0",
     "phantom": "^4.0.2",
-    "phantomjs2": "^2.2.0",
     "postcss": "^5.0.19",
     "postcss-cli": "^2.5.2",
     "replace": "^0.3.0",

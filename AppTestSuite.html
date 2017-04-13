@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mocha</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./node_modules/mocha/mocha.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="mocha"></div>
+
+
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="./node_modules/angular/angular.js"></script>
+  <script src="./node_modules/mocha/mocha.js"></script>
+  <script src="./node_modules/chai/chai.js"></script>
+
+  <script src="./node_modules/angular-route/angular-route.js"></script>
+  <script src="./node_modules/angular-sanitize/angular-sanitize.js"></script>
+  <!--
+  <script src="./node_modules/pru-accessibility/dist/angular/autofocus.js"></script>
+  <script src="./node_modules/pru-utils/dist/pru-utils-all.min.js"></script>
+  <script src="./node_modules/pru-security/dist/angular/safe-html.js"></script>
+  <script src="./node_modules/pru-security/dist/angular/safe-input.js"></script>
+  <script src="./node_modules/pru-strap/dist/assets/pru-strap.min.js"></script>
+  <script src="./node_modules/pru-polyfills/dist/pru-polyfills.min.js"></script>
+-->
+
+
+  <script>
+    mocha.setup('bdd');
+  </script>
+  <script src="./node_modules/angular-mocks/angular-mocks.js"></script>
+  <script src="./dist/movie-main.min.js"></script>
+  <script>
+    mocha.run();
+  </script>
+
+</body>
+
+</html>
