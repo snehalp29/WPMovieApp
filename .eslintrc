@@ -1,6 +1,5 @@
 // This is the recommended default from eslint
 // https://github.com/eslint/eslint/blob/master/conf/eslint.json
-
 {
   "parser": "espree",
   "parserOptions": {
@@ -10,11 +9,27 @@
     "es6": true,
     "commonjs": true,
     "browser": true,
-    "node":true
+    "node": true,
+    "mocha": true,
+    "jasmine": true,
+    "phantomjs": true,
+    "jquery": true,
+    "protractor": true
+  },
+  "globals": {
+    "angular": true,
+    "inject": true,
+    "pru": true,
+    "chai": true,
+    "dump": true,
+    "sinon": true
   },
   "ecmaFeatures": {
     "modules": true
   },
+  "plugins": [
+    "mocha"
+  ],
   "rules": {
     "no-alert": "off",
     "no-array-constructor": "off",
@@ -149,7 +164,10 @@
     "comma-dangle": "error",
     "comma-spacing": "off",
     "comma-style": "off",
-    "complexity": ["off", 11],
+    "complexity": [
+      "off",
+      11
+    ],
     "computed-property-spacing": "off",
     "consistent-return": "off",
     "consistent-this": "off",
@@ -183,7 +201,10 @@
     "newline-after-var": "off",
     "newline-before-return": "off",
     "newline-per-chained-call": "off",
-    "object-curly-spacing": ["off", "never"],
+    "object-curly-spacing": [
+      "off",
+      "never"
+    ],
     "object-shorthand": "off",
     "one-var": "off",
     "one-var-declaration-per-line": "off",
@@ -222,6 +243,7 @@
     "wrap-iife": "off",
     "wrap-regex": "off",
     "yield-star-spacing": "off",
-    "yoda": "off"
+    "yoda": "off",
+    "mocha/no-exclusive-tests": "error"
   }
 }
